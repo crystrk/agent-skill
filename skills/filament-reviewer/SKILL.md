@@ -31,6 +31,7 @@ Skill ini memandu review kode Filament V5 dalam **7 dimensi** secara berurutan.
 | **`shadcn-vue`** | Jika ada custom Livewire/Volt component di luar Filament yang butuh shadcn-vue |
 | **`vue3-reviewer`** | Jika ada custom Vue component yang diembed di dalam Filament panel |
 | **`tailwindcss-development`** | Untuk custom styling, tema panel, atau custom view Filament |
+| **`pest-testing:`** | Jika membuat testing prioritaskan menggunakan Pest |
 
 ---
 
