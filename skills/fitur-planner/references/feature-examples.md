@@ -1,6 +1,6 @@
 # Contoh Output Dokumen Fitur
 
-File ini berisi contoh FEATURE.md yang sudah diisi dengan baik sebagai referensi kualitas output.
+File ini berisi contoh dokumen fitur (`YYYYMMDD-FEATURE-[nama-fitur-slug].md`) yang sudah diisi dengan baik sebagai referensi kualitas output.
 
 ---
 

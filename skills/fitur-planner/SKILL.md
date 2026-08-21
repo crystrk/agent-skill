@@ -6,7 +6,7 @@ description: >
   ingin menambah fitur ke produk yang sudah ada PRD-nya, atau menyebut kata kunci
   seperti "tambah fitur", "buat fitur", "planning fitur", "feature planning",
   "dokumen fitur", atau "spec fitur". Skill ini membaca PRD yang ada lalu menghasilkan
-  FEATURE.md yang konsisten dan tidak lari dari scope produk. Skill ini juga membaca
+  dokumen fitur (YYYYMMDD-FEATURE-[nama-fitur-slug].md) yang konsisten dan tidak lari dari scope produk. Skill ini juga membaca
   repository agar rencana teknis mengikuti arsitektur Laravel, Vue, Astro, dan tooling
   yang benar-benar digunakan proyek.
 ---
@@ -95,19 +95,19 @@ Sebelum generate dokumen, lakukan quick check:
 Jika ada **misalignment**, sampaikan ke user sebelum generate:
 > "⚠️ Saya perhatikan fitur ini mungkin di luar scope PRD karena [alasan]. Apakah kamu ingin tetap lanjut atau menyesuaikan?"
 
-### 5. Generate FEATURE.md
+### 5. Generate Dokumen Fitur (YYYYMMDD-FEATURE-[nama-fitur-slug].md)
 
-Buat file dengan nama `FEATURE-[nama-fitur-slug].md` di folder `<root>/repo/fitur/`, terlepas dari lokasi file PRD.
+Buat file dengan format nama `YYYYMMDD-FEATURE-[nama-fitur-slug].md` di folder `<root>/repo/fitur/`, terlepas dari lokasi file PRD.
 
 - Anggap `<root>` sebagai root workspace atau project yang sedang dikerjakan.
 - Buat folder `repo/fitur/` terlebih dahulu jika belum ada.
-- Gunakan slug huruf kecil dengan pemisah tanda hubung, misalnya `repo/fitur/FEATURE-notifikasi-email.md`.
+- Gunakan format tanggal hari ini (`YYYYMMDD`), prefix `FEATURE-`, dan slug huruf kecil dengan pemisah tanda hubung, misalnya `repo/fitur/20260821-FEATURE-notifikasi-email.md`.
 
 Gunakan template di bawah ini:
 
 ---
 
-## Template FEATURE.md
+## Template Dokumen Fitur
 
 ```markdown
 # Feature: [Nama Fitur]
@@ -325,7 +325,7 @@ Saat mengisi template, ikuti aturan ini:
 ## Output
 
 Setelah generate, sampaikan ke user:
-1. **Path file** yang dibuat: `<root>/repo/fitur/FEATURE-[slug].md`
+1. **Path file** yang dibuat: `<root>/repo/fitur/YYYYMMDD-FEATURE-[nama-fitur-slug].md`
 2. **Summary singkat** alignment dengan PRD (1-2 kalimat)
 3. **Stack dan pola arsitektur** yang terdeteksi
 4. **Daftar Open Questions** yang perlu dijawab user
